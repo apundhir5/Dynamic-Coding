@@ -10,6 +10,27 @@ A LLM based system that automatically generates frontend and backend prototypes 
 - Iteration limits to prevent infinite loops
 - Modular architecture using LangGraph's StateGraph
 
+
+
+## API Keys Required
+
+The following API keys need to be set in your `.env` file:
+-  If using openai
+- `MODEL`: The LLM model to use (e.g. "gpt-4-turbo")
+- `OPENAI_API_KEY`: Your OpenAI API key
+
+-  If using NTTH models
+- `NTTH_ID`: NTTH service identifier
+- `NTTH-SECRET`: NTTH service secret key
+- `NTTH_MODEL`: NTTH model to use (e.g. "GPT-4o")
+- `NTTH_PROVIDER`: NTTH provider to use (e.g. "openai")
+- `NTTH_BASE_URL`: NTTH base URL (e.g. "https://api.ntth.ai/v1")
+
+-  If using Ollama
+- `OLLAMA_MODEL`: Ollama model to use (e.g. "llama3.2")
+- `OLLAMA_BASE_URL`: Ollama base URL (e.g. "http://localhost:11434")
+
+
 ## Prerequisites
 
 - Python 3.8+
